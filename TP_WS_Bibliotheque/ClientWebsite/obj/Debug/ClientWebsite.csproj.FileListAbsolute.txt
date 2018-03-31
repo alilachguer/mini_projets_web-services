@@ -1,0 +1,7 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\bin\ClientWebsite.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\bin\ClientWebsite.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\bin\ClientWebsite.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\obj\Debug\ClientWebsite.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\obj\Debug\ClientWebsite.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\obj\Debug\ClientWebsite.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WS_Bibliotheque\ClientWebsite\obj\Debug\ClientWebsite.pdb

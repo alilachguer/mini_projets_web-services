@@ -1,0 +1,11 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\bin\Debug\netcoreapp2.0\biblio.deps.json
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\bin\Debug\netcoreapp2.0\biblio.runtimeconfig.json
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\bin\Debug\netcoreapp2.0\biblio.runtimeconfig.dev.json
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\bin\Debug\netcoreapp2.0\biblio.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\bin\Debug\netcoreapp2.0\biblio.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.AssemblyInfoInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.AssemblyInfo.cs
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\biblio\obj\Debug\netcoreapp2.0\biblio.pdb

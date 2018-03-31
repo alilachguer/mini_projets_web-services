@@ -1,0 +1,14 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\bin\Debug\TP1_WS.exe.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\bin\Debug\TP1_WS.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\bin\Debug\TP1_WS.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\obj\Debug\TP1_WS.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\obj\Debug\TP1_WS.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\obj\Debug\TP1_WS.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tp2\TP1_WS\TP1_WS\obj\Debug\TP1_WS.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\bin\Debug\TP1_WS.exe.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\bin\Debug\TP1_WS.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\bin\Debug\TP1_WS.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\obj\Debug\TP1_WS.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\obj\Debug\TP1_WS.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\obj\Debug\TP1_WS.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP1_WS\TP1_WS\obj\Debug\TP1_WS.pdb
