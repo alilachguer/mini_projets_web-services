@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace biblio
-{
+
     public class UtilisateurAbonne
     {
         string nom, numero, password;
@@ -57,4 +56,4 @@ namespace biblio
             return user;
         }
     }
-}
+

@@ -5,8 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 
-namespace biblio
-{
+
 
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -107,4 +106,3 @@ namespace biblio
             }
         }
     }
-}

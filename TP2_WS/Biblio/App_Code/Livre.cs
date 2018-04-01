@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace biblio
-{
+
     public class Livre
     {
         string titre, auteur, editeur;
@@ -50,4 +49,4 @@ namespace biblio
             return livre;
         }
     }
-}
+
