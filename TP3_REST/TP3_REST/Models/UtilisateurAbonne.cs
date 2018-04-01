@@ -54,6 +54,11 @@ namespace TP3_REST
                 Console.WriteLine("ancien mot de passe incorrecte");
         }
 
+        public void ecrireCommentaire(Livre livre, string commentaire)
+        {
+            livre.addCommentaire(commentaire);
+        }
+
         public override string ToString()
         {
             string user = "nom: " + this.nom;
