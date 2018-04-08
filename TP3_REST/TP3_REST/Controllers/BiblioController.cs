@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TP3_REST.Models;
 
 namespace TP3_REST.Controllers
 {
@@ -13,58 +14,131 @@ namespace TP3_REST.Controllers
     public class BiblioController : Controller
     {
 
-        
+        private readonly BiblioContext _context;
+
+        public BiblioController(BiblioContext context)
+        {
+            _context = context;
+            if (_context.Livres.Count() == 0)
+            {
+                _context.Livres.Add(new Livre("harry potter", "jk rowling", "poche", 12345, 12));
+                _context.Livres.Add(new Livre("lord of the rings", "Tolkien", "ace books", 87452, 6));
+                _context.Livres.Add(new Livre("the hobbit", "Tolkien", "ace books", 87450, 6));
+                _context.Livres.Add(new Livre("don quixote", "de cervantes", "glenat", 25478, 8));
+
+                _context.Users.Add(new UtilisateurAbonne("ali"));
+                _context.Users.Add(new UtilisateurAbonne("john"));
+
+                _context.Commentaires.Add(new Commentaire(12345, "un commentaire hp"));
+                _context.Commentaires.Add(new Commentaire(12345, "un deuxieme commentaire"));
+
+                _context.SaveChanges();
+            }
+        }
 
         //retourne la liste des livres
-        [HttpGet]
-        public ActionResult Get()
+        [HttpGet(Name ="GetAll")]
+        public IEnumerable<Livre> GetLivres()
         {
-            return View(Biblio.livres);
+            return _context.Livres.ToList();
         }
 
-        [HttpGet ("{isbn}") ]
-        public Livre GetLivreByISBN(int isbn)
+        [HttpGet("users", Name = "GetAllUsers")]
+        public IEnumerable<UtilisateurAbonne> GetUtilisateurs()
         {
-            Livre lvr = new Livre("livre not found", "auteur not found", "editeur not found", 00000, 0);
-            foreach (Livre item in Biblio.livres)
-            {
-                if (item.ISBN == isbn)
-                    lvr = item;
-            }
-            return lvr;
+            return _context.Users.ToList();
         }
 
-        [HttpGet("{auteur}")]
-        public Livre GetLivreByAuteur(string auteur)
+        [HttpGet("livres/isbn/{isbn}", Name ="GetLivreByIsbn")]
+        public IActionResult GetLivreByISBN(int isbn)
         {
-            Livre lvr = new Livre("livre not found", "auteur not found", "editeur not found", 00000, 0);
-            foreach (Livre item in Biblio.livres)
+            var item = _context.Livres.FirstOrDefault(t => t.ISBN == isbn);
+            if (item == null)
             {
-                if (item.Auteur == auteur)
-                    lvr = item;
+                return NotFound();
             }
-            return lvr;
+            return new ObjectResult(item);
+        }
+
+        [HttpGet("livres/auteur/{auteur}")]
+        public IActionResult GetLivreByAuteur(string auteur)
+        {
+            var item = _context.Livres.Where(res => res.Auteur == auteur);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return new ObjectResult(item);
+        }
+
+        [HttpGet("users/user/{user}", Name ="getUserById")]
+        public IActionResult GetUserById(string user)
+        {
+            var item = _context.Users.FirstOrDefault(t => t.Numero == user);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return new ObjectResult(item);
         }
 
 
         [HttpPost]
-        public IActionResult Post([FromBody] Livre livre)
+        public IActionResult AjouterLivre([FromBody] Livre livre)
         {
-            if (!ModelState.IsValid)
+            if (livre == null)
             {
-                return BadRequest(ModelState);
+                return BadRequest();
             }
 
-            return CreatedAtAction("Get", new { isbn = livre.ISBN }, livre);
+            _context.Livres.Add(livre);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetAll", new { isbn = livre.ISBN }, livre);
 
         }
 
-    }
 
-    public class Value
-    {
-        public int Id { get; set; }
-        [MinLength(3)]
-        public string Text { get; set; }
+        [HttpGet("livres/commentaires/{isbn}", Name ="commentaireByLivre")]
+        public IActionResult getCommentsByLivre(int isbn)
+        {
+            var commentaire = _context.Commentaires.Where(t => t.idLivre == isbn);
+            if (commentaire == null)
+            {
+                return NotFound();
+            }
+
+            return new ObjectResult(commentaire);
+        }
+
+        [HttpPost("livres/addCommentaire/{isbn}")]
+        public IActionResult AjouterCommentaire([FromBody] Commentaire commentaire)
+        {
+            if (commentaire == null)
+            {
+                return BadRequest();
+            }
+            Commentaire comment = new Commentaire(commentaire.idLivre, commentaire.commentaire);
+            _context.Commentaires.Add(comment);
+            _context.SaveChanges();
+            
+            return CreatedAtRoute("commentaireByLivre", new { isbn = comment.idLivre}, comment);
+        }
+
+        [HttpPost("users/addUser")]
+        public IActionResult AjouterUtilisateur([FromBody] UtilisateurAbonne user)
+        {
+            if (user == null)
+            {
+                return BadRequest();
+            }
+
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("getUserById", new { user = user.Numero }, user);
+        }
+
+        
     }
 }

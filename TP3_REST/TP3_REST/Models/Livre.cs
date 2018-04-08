@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
-namespace TP3_REST
+namespace TP3_REST.Models
 {
     public class Livre
     {
         string titre, auteur, editeur;
         int isbn, nbExemplaires;
-        List<string> commentaires;
+        List<Commentaire> comments;
 
         public Livre()
         {
-            commentaires = new List<string>();
+            comments = new List<Commentaire>();
         }
 
         public Livre(string titre, string auteur, string editeur, int ISBN, int nbexemplaires)
         {
-            commentaires = new List<string>();
+            comments = new List<Commentaire>();
             this.titre = titre;
             this.auteur = auteur;
             this.editeur = editeur;
@@ -25,6 +27,7 @@ namespace TP3_REST
             this.nbExemplaires = nbexemplaires;
         }
 
+        [Key]
         public int ISBN
         {
             get { return this.isbn; }
@@ -55,16 +58,16 @@ namespace TP3_REST
             set { this.editeur = value; }
         }
 
-        public List<string> Commentaires
+        public List<Commentaire> Commentaires
         {
-            get { return this.commentaires; }
-            set { this.commentaires = value; }
+            get { return this.comments; }
+            set { this.comments = value; }
         }
 
         
-        public void addCommentaire(string commentaire)
+        public void addCommentaire(Commentaire commentaire)
         {
-            this.commentaires.Add(commentaire);
+            this.comments.Add(commentaire);
         }
 
         public string Afficher()

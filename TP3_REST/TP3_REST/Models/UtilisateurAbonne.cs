@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
-namespace TP3_REST
+namespace TP3_REST.Models
 {
     public class UtilisateurAbonne
     {
         string nom, numero, password;
-        int count = 0;
+        static int count = 0;
 
         public UtilisateurAbonne()
         {
@@ -22,6 +23,13 @@ namespace TP3_REST
             this.nom = nom;
         }
 
+        public string Nom
+        {
+            get { return this.nom; }
+            set { this.nom = value; }
+        }
+
+        [Key]
         public string Numero
         {
             get { return this.numero; }
@@ -54,7 +62,7 @@ namespace TP3_REST
                 Console.WriteLine("ancien mot de passe incorrecte");
         }
 
-        public void ecrireCommentaire(Livre livre, string commentaire)
+        public void ecrireCommentaire(Livre livre, Commentaire commentaire)
         {
             livre.addCommentaire(commentaire);
         }

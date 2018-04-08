@@ -7,49 +7,49 @@ using System.Web;
 /// </summary>
 /// 
 
-namespace TP3_REST
+namespace TP3_REST.Models
 {
     
-    public static class Biblio
+    public class Biblio
     {
-        public static List<UtilisateurAbonne> utilisateurs = new List<UtilisateurAbonne>();
-        public static List<Livre> livres = new List<Livre>();
+        public List<UtilisateurAbonne> utilisateurs = new List<UtilisateurAbonne>();
+        public List<Livre> livres = new List<Livre>();
 
-        static Biblio()
+        public Biblio()
         {
             ////bibliotheque = new Biblio("ma bibliotheque");
 
-            Biblio.livres.Add(new Livre("harry potter", "jk rowling", "poche", 12345, 12));
-            Biblio.livres.Add(new Livre("lord of the rings", "Tolkien", "ace books", 87452, 6));
-            Biblio.livres.Add(new Livre("don quixote", "de cervantes", "glenat", 25478, 8));
+            //livres.Add(new Livre("harry potter", "jk rowling", "poche", 12345, 12));
+            //livres.Add(new Livre("lord of the rings", "Tolkien", "ace books", 87452, 6));
+            //livres.Add(new Livre("don quixote", "de cervantes", "glenat", 25478, 8));
 
-            Biblio.utilisateurs.Add(new UtilisateurAbonne("ali"));
-            Biblio.utilisateurs.Add(new UtilisateurAbonne("thomas"));
+            utilisateurs.Add(new UtilisateurAbonne("ali"));
+            utilisateurs.Add(new UtilisateurAbonne("thomas"));
 
         }
 
 
-        public static List<UtilisateurAbonne> getUtilisateurs()
+        public List<UtilisateurAbonne> getUtilisateurs()
         {
             return utilisateurs;
         }
 
-        public static List<Livre> getLivres()
+        public List<Livre> getLivres()
         {
             return livres;
         }
 
-        public static void ajouterLivre(string titre, string auteur, string editeur, int isbn, int nbexemplaires)
+        public void ajouterLivre(string titre, string auteur, string editeur, int isbn, int nbexemplaires)
         {
             livres.Add(new Livre(titre, auteur, editeur, isbn, nbexemplaires));
         }
 
-        public static void ajouterUtilisateurAbonne(UtilisateurAbonne user)
+        public void ajouterUtilisateurAbonne(UtilisateurAbonne user)
         {
             utilisateurs.Add(user);
         }
 
-        public static Livre GetLivreByISBN(int isbn)
+        public Livre GetLivreByISBN(int isbn)
         {
             Livre lvr = null;
             foreach (Livre item in livres)
@@ -62,7 +62,7 @@ namespace TP3_REST
             return lvr;
         }
 
-        public static Livre GetLivreByAuteur(string auteur)
+        public Livre GetLivreByAuteur(string auteur)
         {
             Livre livre = null;
             foreach (Livre lvr in livres)
@@ -74,7 +74,7 @@ namespace TP3_REST
         }
 
 
-        public static UtilisateurAbonne getUserById(string numero)
+        public UtilisateurAbonne getUserById(string numero)
         {
             UtilisateurAbonne util = null;
             foreach (UtilisateurAbonne user in utilisateurs)
@@ -85,7 +85,7 @@ namespace TP3_REST
             return util;
         }
 
-        public static bool utilisateurExist(string numero)
+        public bool utilisateurExist(string numero)
         {
             bool util = false;
             foreach (UtilisateurAbonne user in utilisateurs)
@@ -96,7 +96,7 @@ namespace TP3_REST
             return util;
         }
 
-        public static void ajouterCommentaire(string commentaire, Livre livre, string numero, string password)
+        public void ajouterCommentaire(Commentaire commentaire, Livre livre, string numero, string password)
         {
             foreach (Livre item in livres)
             {
@@ -109,7 +109,7 @@ namespace TP3_REST
             }
         }
 
-        public static List<string> getCommentairesByLivre(Livre livre)
+        public List<Commentaire> getCommentairesByLivre(Livre livre)
         {
             if (livres.Contains(livre))
                 return livre.Commentaires;
@@ -117,7 +117,7 @@ namespace TP3_REST
                 return null;
         }
 
-        public static void changeUserPassword(string numero, string oldpass, string newpass)
+        public void changeUserPassword(string numero, string oldpass, string newpass)
         {
             if (utilisateurExist(numero))
             {
