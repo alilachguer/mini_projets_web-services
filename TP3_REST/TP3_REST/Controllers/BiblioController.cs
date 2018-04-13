@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -27,7 +27,8 @@ namespace TP3_REST.Controllers
                 _context.Livres.Add(new Livre("don quixote", "de cervantes", "glenat", 25478, 8));
 
                 _context.Users.Add(new UtilisateurAbonne("ali"));
-                _context.Users.Add(new UtilisateurAbonne("john"));
+                _context.Users.Add(new UtilisateurAbonne("tom"));
+                _context.Users.Add(new UtilisateurAbonne("tom"));
 
                 _context.Commentaires.Add(new Commentaire(12345, "un commentaire hp"));
                 _context.Commentaires.Add(new Commentaire(12345, "un deuxieme commentaire"));
