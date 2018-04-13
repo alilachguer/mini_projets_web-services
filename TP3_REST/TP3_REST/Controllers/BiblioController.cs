@@ -98,7 +98,6 @@ namespace TP3_REST.Controllers
 
         }
 
-
         [HttpGet("livres/commentaires/{isbn}", Name ="commentaireByLivre")]
         public IActionResult getCommentsByLivre(int isbn)
         {
@@ -139,6 +138,21 @@ namespace TP3_REST.Controllers
             return CreatedAtRoute("getUserById", new { user = user.Numero }, user);
         }
 
+
+        [HttpDelete("users/deleteUser/{user}")]
+        public IActionResult DeleteUser(string user)
+        {
+            var User = _context.Users.FirstOrDefault(r => r.Numero == user);
+            if (User == null)
+            {
+                return NotFound();
+            }
+
+            _context.Users.Remove(User);
+            _context.SaveChanges();
+            return new NoContentResult();
+
+        }
         
     }
 }
