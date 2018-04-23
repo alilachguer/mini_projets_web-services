@@ -27,7 +27,7 @@ namespace TP3_REST
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BiblioContext>(opt => opt.UseInMemoryDatabase("biblio"));
+            services.AddDbContext<BiblioContext>(opt => opt.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Biblio;Integrated Security=True"));
             services.AddMvc();
         }
 

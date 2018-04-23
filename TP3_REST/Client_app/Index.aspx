@@ -63,11 +63,7 @@
              <%} %>
          </table> 
     </div>
-        <h1>Chercher un Utilisateur</h1>
-        <div>
-            <asp:TextBox runat="server" ID="user_id" type="text" placeholder="nom livre"/>
-            <asp:Button ID="cuser" runat="server" Text="chercher" Height="24px" Width="89px" />
-        </div>
+        <a href="User.aspx">se connecter</a>
     </form>
     
 </body>
