@@ -16,7 +16,7 @@ public class Serveur {
 //			chat.setEspece(e);
 			Animal skeleton = (Animal) UnicastRemoteObject.exportObject(chat, 0);
 			
-			System.setProperty("java.security.policy","bin/policyFile.policy");
+			System.setProperty("java.security.policy","./policyFile.policy");
 			if (System.getSecurityManager() == null)
 	            System.setSecurityManager(new SecurityManager());
 			

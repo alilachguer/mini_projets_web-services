@@ -15,7 +15,7 @@ public class AnimalImpl implements Animal {
 		this.nom = nom;
 		this.race = race;
 		this.espece = espece;
-		this.dossierSuivi = dossierSuivi = new DossierSuivi("dossier suivi Animal non modifie par client");
+		this.dossierSuivi = new DossierSuivi("dossier suivi Animal non modifie par client");
 	}
 	
 	public Espece getEspece() throws RemoteException{
