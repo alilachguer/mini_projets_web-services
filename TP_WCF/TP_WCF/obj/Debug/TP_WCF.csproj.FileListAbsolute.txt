@@ -1,7 +1,0 @@
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\bin\Debug\TP_WCF.dll.config
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\bin\Debug\TP_WCF.dll
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\bin\Debug\TP_WCF.pdb
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\obj\Debug\TP_WCF.csprojResolveAssemblyReference.cache
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\obj\Debug\TP_WCF.csproj.CoreCompileInputs.cache
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\obj\Debug\TP_WCF.dll
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\TP_WCF\obj\Debug\TP_WCF.pdb

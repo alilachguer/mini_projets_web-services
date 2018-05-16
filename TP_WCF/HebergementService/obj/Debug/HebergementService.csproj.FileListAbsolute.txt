@@ -1,0 +1,13 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\HebergementService.exe.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\HebergementService.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\HebergementService.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ProjetShare.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ProjetShare.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ProjetShare.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\obj\Debug\HebergementService.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\obj\Debug\HebergementService.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\obj\Debug\HebergementService.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\obj\Debug\HebergementService.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ServiceRecette.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ServiceRecette.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\HebergementService\bin\Debug\ServiceRecette.dll.config

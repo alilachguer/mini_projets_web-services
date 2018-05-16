@@ -3,9 +3,9 @@ C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_RES
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\bin\Debug\netcoreapp2.0\TP3_REST.runtimeconfig.dev.json
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\bin\Debug\netcoreapp2.0\TP3_REST.dll
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\bin\Debug\netcoreapp2.0\TP3_REST.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.csprojResolveAssemblyReference.cache
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.csproj.CoreCompileInputs.cache
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.AssemblyInfoInputs.cache
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.AssemblyInfo.cs
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.dll
 C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.pdb
-C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP3_REST\TP3_REST\obj\Debug\netcoreapp2.0\TP3_REST.csprojResolveAssemblyReference.cache

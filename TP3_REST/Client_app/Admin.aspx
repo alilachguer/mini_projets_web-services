@@ -31,7 +31,7 @@
             <asp:TextBox ID="nbExemplaires" runat="server" placeholder="nombre exemplaires"></asp:TextBox>
         </div>
         
-        <asp:Button ID="ajouter_livre" runat="server" Text="ajouter" />
+        <asp:Button ID="ajouter_livre" runat="server" Text="ajouter" OnClick="ajouter_livre_Click" />
         
 
         <p>

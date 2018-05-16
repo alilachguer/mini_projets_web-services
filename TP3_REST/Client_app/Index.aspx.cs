@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using RestSharp;
-
+using System.Web.UI.WebControls;
 
 public partial class Index : System.Web.UI.Page
 {
@@ -13,31 +13,36 @@ public partial class Index : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+    }
 
+    public string getContent(string url)
+    {
+        var client = new RestClient(url);
+        var request = new RestRequest("", Method.GET);
+        IRestResponse response = client.Execute(request);
+        return response.Content;
     }
 
     protected void button_livre_isbn_Click(object sender, EventArgs e)
     {
-        var client = new RestClient("http://localhost:49616/api/Biblio/");
-        var request = new RestRequest("", Method.GET);
-
-        IRestResponse response = client.Execute(request);
-        var content = response.Content;
-
-        livres = JsonConvert.DeserializeObject<List<Livre>>(content);
-
-
-        //Rest_Client restClient = new Rest_Client();
-        //if (livre_isbn.Text == string.Empty)
-        //{
-        //    restClient.endPoint = "http://localhost:49616/api/Biblio/" + livre_isbn.Text;
-        //    livres = JsonConvert.DeserializeObject<List<Livre>>(restClient.makeRequest());
-        //}
-        //else
-        //{
-        //    restClient.endPoint = "http://localhost:49616/api/Biblio/livres/isbn/" + livre_isbn.Text;
-        //    livre = JsonConvert.DeserializeObject<Livre>(restClient.makeRequest());
-        //}
+        
+        if (livre_isbn.Text == string.Empty)
+        {
+            var content = getContent("http://localhost:49616/api/Biblio/");
+            livres = JsonConvert.DeserializeObject<List<Livre>>(content);
+        }
+        else
+        {
+            var content = getContent("http://localhost:49616/api/Biblio/livres/isbn/" + livre_isbn.Text);
+            if (content != "")
+            {
+                livre = JsonConvert.DeserializeObject<Livre>(content);
+                message.Text = "";
+            }
+                
+            else
+                message.Text = "livre not found";
+        }
     }
 
     protected void button_livre_auteur_Click(object sender, EventArgs e)
@@ -45,13 +50,25 @@ public partial class Index : System.Web.UI.Page
         Rest_Client restClient = new Rest_Client();
         if (livre_auteur.Text == string.Empty)
         {
-            restClient.endPoint = "http://localhost:49616/api/Biblio/" + livre_isbn.Text;
-            livres = JsonConvert.DeserializeObject<List<Livre>>(restClient.makeRequest());
+            var content = getContent("http://localhost:49616/api/Biblio/");
+            livres = JsonConvert.DeserializeObject<List<Livre>>(content);
         }
         else
         {
-            restClient.endPoint = "http://localhost:49616/api/Biblio/livres/auteur/" + livre_auteur.Text;
-            livres = JsonConvert.DeserializeObject<List<Livre>>(restClient.makeRequest());
+            var content = getContent("http://localhost:49616/api/Biblio/livres/auteur/" + livre_auteur.Text);
+            if (content != "")
+            {
+                livres = JsonConvert.DeserializeObject<List<Livre>>(content);
+                message.Text = "";
+            }
+            else
+                message.Text = "auteur does not exist";
         }
+    }
+
+
+    protected void getLivre_Click(object sender, CommandEventArgs e)
+    {
+        Response.Redirect("Book.Aspx?isbn=" + e.CommandArgument.ToString());
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\bin\Debug\ProjetShare.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\bin\Debug\ProjetShare.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\bin\Debug\ProjetShare.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\obj\Debug\ProjetShare.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\obj\Debug\ProjetShare.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\obj\Debug\ProjetShare.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\ProjetShare\obj\Debug\ProjetShare.pdb

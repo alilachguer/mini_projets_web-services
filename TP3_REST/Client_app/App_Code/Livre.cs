@@ -26,7 +26,6 @@ namespace Client_app.App_Code
             this.nbExemplaires = nbexemplaires;
         }
 
-        [Key]
         public int ISBN
         {
             get { return this.isbn; }

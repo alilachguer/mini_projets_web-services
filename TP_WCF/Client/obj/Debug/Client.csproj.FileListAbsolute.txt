@@ -1,0 +1,16 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\Client.exe.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\Client.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\Client.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\HebergementService.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ProjetShare.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ServiceRecette.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\HebergementService.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\HebergementService.exe.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ProjetShare.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ProjetShare.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ServiceRecette.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\bin\Debug\ServiceRecette.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\obj\Debug\Client.exe
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Client\obj\Debug\Client.pdb

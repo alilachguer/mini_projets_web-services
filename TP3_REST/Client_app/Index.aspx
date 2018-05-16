@@ -43,9 +43,15 @@
                 <th>Nombre exemplaires</th>
               </tr>
              <%if(livres.Count >= 1){ %>
+             
               <% foreach (var res in livres) { %>
               <tr>
-                <td><%: res.ISBN %></td>
+                 <%livre = res; %>
+                <td>
+                    <asp:LinkButton ID="lien_livre" runat="server" OnCommand="getLivre_Click" CommandArgument='<%#Eval("livre.ISBN")%>' >
+                        <%: livre.ISBN%>
+                    </asp:LinkButton>
+                </td>
                 <td><%: res.Titre %></td>
                 <td><%: res.Auteur %></td>
                 <td><%: res.Editeur %></td>
@@ -54,7 +60,7 @@
              <% } }%>
              <%else{%>
                 <tr>
-                <td><%: livre.ISBN %></td>
+                <td><asp:LinkButton ID="HyperLink2" runat="server"><%: livre.ISBN %></asp:LinkButton></td>
                 <td><%: livre.Titre %></td>
                 <td><%: livre.Auteur %></td>
                 <td><%: livre.Editeur %></td>
@@ -63,7 +69,7 @@
              <%} %>
          </table> 
     </div>
-        <a href="User.aspx">se connecter</a>
+        <asp:Label ID="message" runat="server" Text=""></asp:Label>
     </form>
     
 </body>

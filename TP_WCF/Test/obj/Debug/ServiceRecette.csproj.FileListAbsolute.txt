@@ -1,0 +1,10 @@
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ProjetShare.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ProjetShare.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ProjetShare.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\obj\Debug\ServiceRecette.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\obj\Debug\ServiceRecette.csproj.CoreCompileInputs.cache
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ServiceRecette.dll.config
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ServiceRecette.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\bin\ServiceRecette.pdb
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\obj\Debug\ServiceRecette.dll
+C:\Users\ali\Desktop\M1\S2\Architecture n-tier\web services\tps\TP_WCF\Test\obj\Debug\ServiceRecette.pdb
